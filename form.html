@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+    <h1>Information Form</h1>
+    <h3>Required fields are shown by *</h3>
+    <hr>
+    <h3>Personal Information</h3>
+    <div>Are you eligible : <input type="checkbox" name="eligibility" checked required></div>
+    <br>
+    <div>Name : <input type="text" name="myname" required> </div>
+    <br>
+    <div>College Name : <input type="text" name="collgename" required> </div>
+    <br>
+    <div>Branch : <input type="text" name="branch" required> </div>
+    <br>
+    <div>Enrollment Number : <input type="number" name="rollno" required> </div>
+    <br>
+    <div>Phone Number : <input type="number" name="phonenumber" required> </div>
+    <br>
+    <div>Email id : <input type="email" name="email" required></div>
+    <br>
+    <div>Address : <input type="text" name="address"></div>
+    <br>
+    <div>
+        Write about yourself : <textarea name="mytext"  cols="80" rows="5"></textarea>
+    </div>
+    <br>
+    <div>
+        <!-- <fieldset> -->
+        Gender : Male <input type="radio" name="gender"> 
+        Female <input type="radio" name="gender">
+        Other <input type="radio" name="gender">
+    <!-- </fieldset> -->
+    </div>
+    <br>
+    <hr>
+    <h3>Card Information</h3>
+    <div>Card Type : *
+        <select name="cardtype" id="card" required>
+            <option value="">--Select a card type--</option>
+            <option value="Rupay">Rupay</option>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        Card Number : *<input type="text" name="cardnumber" required>
+    </div>
+    <br>
+    <div>
+        Expiration date : *<input type="date" name="expdate" required> 
+    </div>
+    <br>
+    <div>
+        CVV : *<input type="password" name="cvv" required>
+    </div>
+    <br>
+    <div>
+        <input type="submit" name="submission" value="Submit Now">
+    </div>
+    <br>
+    <div>
+        <input type="reset" name="reset" value="Reset">
+    </div>
+
+</form>
+</body>
+</html>
