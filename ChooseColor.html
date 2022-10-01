@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon"
+        href="https://cdn0.iconfinder.com/data/icons/interface-tools-starter-colored/48/JD-02-512.png"
+        type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat:wght@300&family=Quicksand:wght@500;600&family=Raleway:wght@300&family=Tiro+Bangla&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #ef32d9;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right,
+                    #89fffd,
+                    #ef32d9);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right,
+                    #89fffd,
+                    #ef32d9);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 45px;
+            font-family: "Cinzel", sans-serif;
+        }
+
+        .slidecontainer {
+            width: 90%;
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 10px;
+            margin: 20px 50px;
+            background: #000000;
+            outline: none;
+            opacity: 0.7;
+            border-radius: 15px;
+            -webkit-transition: 0.2s;
+            transition: opacity 0.2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 35px;
+            background: #0491aa;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 35px;
+            height: 35px;
+            background: #046aaa;
+            cursor: pointer;
+        }
+
+        #finalColor {
+            font-size: 2.3em;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        #copy {
+            margin: 20px;
+            cursor: pointer;
+            filter: invert(2);
+        }
+
+        #copiedColor {
+            font-size: 1.4em;
+            font-family: "Quicksand", sans-serif;
+        }
+
+        #right {
+            font-size: 1.4em;
+            font-family: "Tiro Bangla", serif;
+        }
+
+        .coloredbox {
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            margin: 10px 0;
+            background-color: black;
+        }
+    </style>
+    <title>Color Chooser</title>
+</head>
+
+<body>
+
+    <h1>Color Chooser</h1>
+
+    <div class="slidecontainer">
+        <label for="">R</label>
+        <input type="range" min="0" max="255" value="0" class="slider" id="myRange">
+        <label for="">G</label>
+        <input type="range" min="0" max="255" value="0" class="slider" id="myRange1">
+        <label for="">B</label>
+        <input type="range" min="0" max="255" value="0" class="slider" id="myRange2">
+        <p id="finalColor">rgb(<span id="demo">0</span>, <span id="demo1">0</span>, <span id="demo2">0</span>)</p>
+        <p id="copiedColor"></p>
+        <div class="coloredbox" id="coloredbox"></div>
+        <p id="right">Created By @ Aryan Garg &copy; 2022</p>
+    </div>
+</body>
+<script>
+    var slider = document.getElementById("myRange");
+    var slider1 = document.getElementById("myRange1");
+    var slider2 = document.getElementById("myRange2");
+    var output = document.getElementById("demo");
+    var output1 = document.getElementById("demo1");
+    var output2 = document.getElementById("demo2");
+    var finalColor = document.getElementById("finalColor");
+    var coloredBox = document.getElementById("coloredbox");
+    let copy = document.getElementById("copy");
+    let copiedColor = document.getElementById("copiedColor");
+
+    slider.oninput = function () {
+        this.style.backgroundColor = `rgba(${this.value},0,0)`;
+        output.innerHTML = slider.value;
+        coloredBox.style.backgroundColor = finalColor.innerText;
+    }
+
+    slider1.oninput = function () {
+        this.style.backgroundColor = `rgba(0,${this.value},0)`;
+        output1.innerHTML = slider1.value;
+        coloredBox.style.backgroundColor = finalColor.innerText;
+    }
+
+    slider2.oninput = function () {
+        this.style.backgroundColor = `rgba(0,0,${this.value})`;
+        output2.innerHTML = slider2.value;
+        coloredBox.style.backgroundColor = finalColor.innerText;
+    }
+
+    copy.addEventListener('click', getCopied);
+
+    function getCopied() {
+        navigator.clipboard.writeText(finalColor.innerText);
+        copiedColor.innerText = "Copied Color : " + finalColor.innerText;
+    }
+
+</script>
+
+</html>
