@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    height:100%;
+    width:100%;
+    /* border:1px solid; */
+}
+.header{
+    position:relative;
+    height: 5rem;
+    width: 100%;
+    /* border: 1px solid; */
+    display:flex;
+    background-color: #fdefc088;
+}
+.options{
+    position:absolute;
+    display:flex;
+    height: 100%;
+    width: 18rem;
+    /* border: 1px solid; */
+    /* left:50rem; */
+    right:5rem;
+}
+.options div{
+    height:100%;
+    width:6rem;
+    /* border: 1px solid; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:large;
+
+}
+
+.options div:hover{
+    font-size:22px;
+}
+.logo{
+    /* border:1px solid; */
+    height:100%;
+    width:5rem;
+    position: absolute;
+    /* left:2rem; */
+}
+.logo-image{
+    
+    /* border:1px solid; */
+    height:100%;
+    width:5rem;
+
+}
+.name{
+    position:absolute;
+    left:5rem;
+    height:100%;
+    width:20rem;
+    /* border:1px solid; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+}
+
+.box{
+    height:30rem;
+    width:20rem;
+    background-color:antiquewhite;
+    color:brown;
+    border:1px solid;
+    /* margin-top:2rem; */
+}
+.box:hover{
+    height:32rem;
+    
+    background-color:rgb(240, 228, 212);
+    color:rgb(233, 126, 126);
+}
+.box-image{
+    height:60%;
+    width:100%;
+    border:1px solid;
+}
+.box-imagetag{
+  height:100%;
+  width:100%;  
+}
+.display-content{
+    display:flex;
+    justify-content:space-evenly;
+    height:32rem;
+    width:100%;
+    /* margin-top:2rem; */
+    /* border:1px solid; */
+}
+.box-content{
+    padding:2rem;
+    font-size: 1.1rem;
+    /* overflow:scroll; */
+    /* word-break:break-all;     */
+}
+.section{
+    background-color: #dfd6bdd2;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    height:120rem;
+    width:100%;
+}
+.quote{
+    height:8rem;
+    padding:1rem;
+    width:100%;
+    font-style:italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:blue;
+    /* border:1px solid; */
+    text-align: center;
+    margin-bottom:1rem;
+}
+.quote:hover{
+    font-size:20px;
+    color:darkblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.button{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 6rem;
+    width:100%;
+    /* border:1px solid; */
+}
+.future{
+    height: 5rem;
+    width:100%;
+    /* border:1px solid; */
+    text-align:center;
+    margin-top:-1rem;
+    color:rgb(145, 0, 241);
+    font-size:1.5rem;
+}
+hr{
+    height:10px;
+    background-color:black;
+}
+
+.footer{
+    height:15rem;
+    width:100%;
+    background-color: gray;
+    color:white;
+}
+.copyright{
+    height:5rem;
+    width:100%;
+    /* border:1px solid; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size:2rem;
+}
+.footer-content{
+    height:6rem;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid; */
+    margin-top:1rem;
+    font-size:1.5rem;
+    padding:1rem;
+}
+
+.langar{
+    height:23rem;
+    width:100%;
+    border:1px solid;
+}
+.langar img{
+    height: 100%;
+    width:100%;
+}
+#contact-us p{
+    margin-top:-1rem;
+}
+.social-media{
+    height:7rem;
+    width:100%;
+    /* border:1px solid; */
+    display:flex;
+    margin-top:-3rem;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    margin-top:3rem;
+    margin-right:1rem;
+}
+@media ( max-width:800px){
+ 
+.options{
+    position:absolute;
+    display:flex;
+    height: 100%;
+    width: 9rem;
+    /* border: 1px solid; */
+    /* left:50rem; */
+    right:0.2rem;
+}
+
+
+.options div{
+    height:100%;
+    width:3rem;
+    /* border: 1px solid; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:10px;
+
+}
+
+.options div:hover{
+    font-size:12px;
+}
+.logo{
+    /* border:1px solid; */
+    height:100%;
+    width:5rem;
+    position: absolute;
+    /* left:2rem; */
+}
+.logo-image{
+    
+    /* border:1px solid; */
+    height:100%;
+    width:5rem;
+
+}
+.name{
+    position:absolute;
+    left:5rem;
+    height:100%;
+    width:6rem;
+    /* border:1px solid; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+}
+
+
+.box{
+    height:30rem;
+    width:13rem;
+    background-color:antiquewhite;
+    color:brown;
+    border:1px solid;
+    /* margin-top:2rem; */
+}
+.box-content{
+    padding:0.4rem;
+    font-size: 0.6rem;
+    /* overflow:scroll; */
+    /* word-break:break-all;     */
+}
+
+.quote{
+    height:4rem;
+    padding:1rem;
+    width:100%;
+    font-style:italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:blue;
+    /* border:1px solid; */
+    text-align: center;
+    margin-bottom:1rem;
+    font-size:8px;
+}
+.quote:hover{
+    font-size:10px;
+    color:darkblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.future{
+    height: 3rem;
+    width:100%;
+    /* border:1px solid; */
+    text-align:center;
+    margin-top:-1rem;
+    color:rgb(145, 0, 241);
+    font-size:0.8rem;
+}
+hr{
+    height:5px;
+    background-color:black;
+}
+
+.section{
+    background-color: #dfd6bdd2;
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    height:98rem;
+    width:100%;
+}
+
+.footer{
+    height:10rem;
+    width:100%;
+    background-color: gray;
+    color:white;
+}
+.copyright{
+    height:3rem;
+    width:100%;
+    /* border:1px solid; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size:0.7rem;
+}
+.footer-content{
+    height:2rem;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid; */
+    margin-top:1rem;
+    font-size:0.8rem;
+    padding:1rem;
+}
+}
