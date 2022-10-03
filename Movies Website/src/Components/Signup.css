@@ -1,0 +1,77 @@
+.mycarda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    object-fit: contain;
+    background-size: 100vw 100vh;
+}
+
+.carda{
+    background-color: white;
+    border: 1px solid;
+    height: 30rem;
+    width: 25rem;
+    margin-top: calc(( 100vh - 25rem ) / 10);
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.h2a{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #d1323a;
+    font-family: fantasy;
+}
+
+.labela{
+    display: block;
+    margin-top: 2rem;
+    text-align: left;
+    margin-left: 4rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.inputa{
+    width: 17rem;
+    height: 2.5rem;
+    border: none;
+    border-bottom: 1px solid #d1323a;
+}
+
+.inputa:focus{
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #d1323a;
+}
+
+.buttona{
+    margin-top: 3rem;
+    outline: none;
+    background-color: #d1323a;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    border: none;
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 1.3rem;
+}
+
+.buttona:hover{
+    background-color: white;
+    color: #d1323a;
+    border: 1px solid #d1323a;
+}
+
+.lefta{
+    margin-right: 1rem;
+}
+
+.righta{
+    margin-right: 1rem;
+}

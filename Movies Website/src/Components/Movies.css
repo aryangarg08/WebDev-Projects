@@ -1,0 +1,25 @@
+.main{
+    margin-top: 3rem;
+}
+
+.list-group{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.list-group > li {
+    cursor: pointer;
+}
+
+.img{
+    height: 10rem;
+    width: 15rem;
+    background-size: cover;
+    margin-right: 1rem;
+}
+
+.col-9{
+    padding-right: 3rem;
+}
